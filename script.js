@@ -6,15 +6,9 @@ const lines = [
     "Conectando ao banco de dados: AMOR 5 ANOS",
     "Verificando status do relacionamento...",
     "Status: MAIS FORTE DO QUE NUNCA.",
-    "Buscando momentos felizes...",
-    "Iniciando escaneamento biométrico...",
     "Detectando presença de: Francyanne...",
     "Analise de DNA: 100% Compatível com Gabriel.",
-    "Nível de Felicidade: Mais de 8000!",
     "Acesso concedido. Abrindo pasta: NOSSO_FUTURO.exe",
-
-    
-    "Localizando fotos e sorrisos...",
     "Comando: carregar_melhor_pessoa.sh",
     "Status: SUCESSO! Melhor pessoa carregada.",
     "Aguarde... Carregando 5 anos de história..."

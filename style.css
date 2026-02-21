@@ -100,3 +100,31 @@ body {
         transform: translateY(105vh); 
     }
 }
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        align-items: flex-start; 
+        padding-top: 20px;
+    }
+
+    .terminal-container {
+        width: 95%; 
+        padding: 15px;
+        font-size: 14px; 
+    }
+
+    #pixel-photo {
+        max-width: 80%; 
+        height: auto;
+    }
+
+    .heart {
+        font-size: 1.2rem;
+    }
+
+    #contador p {
+        font-size: 1rem !important;
+        width: 100%;
+    }
+}
