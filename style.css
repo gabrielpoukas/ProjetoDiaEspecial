@@ -5,9 +5,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; 
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto; 
+    padding: 20px 0;
 }
 
 .terminal-container {
@@ -18,6 +20,7 @@ body {
     border: 1px solid #2ecc71;
     box-shadow: 0 0 15px rgba(46, 204, 113, 0.3);
     border-radius: 5px;
+    height: auto;
 }
 
 #terminal-output {
@@ -32,7 +35,6 @@ body {
     display: none !important;
 }
 
-
 #image-container {
     display: flex;
     flex-direction: column;
@@ -44,12 +46,12 @@ body {
 
 #pixel-photo {
     max-width: 250px; 
+    width: 100%; 
     height: auto;
     image-rendering: pixelated; 
     border: 2px solid #2ecc71;
     margin-top: 15px;
 }
-
 
 #contador p {
     font-family: 'Courier New', monospace;
@@ -59,13 +61,6 @@ body {
     padding: 10px;
     border-radius: 5px;
     display: inline-block;
-}
-
-
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
 
 #cursor {
@@ -97,34 +92,31 @@ body {
 
 @keyframes fall {
     to {
-        transform: translateY(105vh); 
+        transform: translateY(110vh); 
     }
 }
 
 @media (max-width: 600px) {
     body {
+        display: block; 
         padding: 10px;
-        align-items: flex-start; 
-        padding-top: 20px;
+        padding-top: 30px;
     }
 
     .terminal-container {
         width: 95%; 
+        margin: 0 auto; 
         padding: 15px;
         font-size: 14px; 
     }
 
     #pixel-photo {
-        max-width: 80%; 
-        height: auto;
-    }
-
-    .heart {
-        font-size: 1.2rem;
+        max-width: 220px; 
     }
 
     #contador p {
-        font-size: 1rem !important;
+        font-size: 0.9rem !important;
         width: 100%;
+        box-sizing: border-box;
     }
 }
